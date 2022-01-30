@@ -1,27 +1,37 @@
 .subscribe {
   margin-left: 93px;
-}
 
-.subscribe__item {
-  display: flex;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 
-.subscribe__input {
-  padding-left: 16px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  color: $hero-text-color;
+  &__item {
+    display: flex;
+  }
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--hero-text-color);
 
-.subscribe__input:hover,
-.subscribe__input:focus {
-  cursor: pointer;
-  border-color: $accent-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__input:hover,
+  &__input:focus {
+    cursor: pointer;
+    border-color: var(--accent-color);
+  }
 }
 
 .subscribe-button {
@@ -45,15 +55,15 @@
   border-radius: 4px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-button__icon {
-  position: absolute;
-  right: 28px;
-  top: 13px;
-}
+  &__icon {
+    position: absolute;
+    right: 28px;
+    top: 13px;
+  }
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
